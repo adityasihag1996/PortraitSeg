@@ -1,4 +1,4 @@
-import torch, torchvision
+import torch
 from torch.utils.data import DataLoader
 import cv2
 import os
@@ -11,6 +11,7 @@ from config import IMAGE_DIR, IMAGE_SIZE, BATCH_SIZE, TRAIN_SPLIT, LR, DEVICE, N
 from config import scaling_transform, augment_transform
 from dataset import PortraitDataset
 from utils import evaluate_mean_iou
+
 
 def runner(model, train_dataloader, test_dataloader, optimizer, criterion, device, epochs):
     model = model.to(device)
