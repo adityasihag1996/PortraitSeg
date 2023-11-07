@@ -1,5 +1,5 @@
 # MobileNetV2 UNet for Image Segmentation
-This repository contains a TensorFlow/Keras implementation of a U-Net architecture with a MobileNetV2 backbone for the purpose of image segmentation. This hybrid neural network combines the efficiency of MobileNetV2 with the effective architecture of U-Net for semantic segmentation tasks.
+This repository contains a PyTorch implementation of a U-Net architecture with a MobileNetV2 backbone for the purpose of image segmentation. This hybrid neural network combines the efficiency of MobileNetV2 with the effective architecture of U-Net for semantic segmentation tasks.
 
 MobileNetV2 is used as the encoder, which is pre-trained on ImageNet, and provides a powerful, yet efficient feature extraction. The U-Net architecture with its skip connections and upscaling paths is used as the decoder, which allows for precise localization.
 
@@ -82,4 +82,4 @@ Contributions to improve the project are welcome. Please follow these steps to c
 
 Fork the repository.\
 Create a new branch for each feature or improvement.\
-Submit a pull request with a comprehensive description of changes.\
+Submit a pull request with a comprehensive description of changes.
