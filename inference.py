@@ -2,13 +2,11 @@ import argparse
 import cv2
 import numpy as np
 import torch
-import torchvision.transforms as transforms
 
 from model import PortraitNet
 from config import IMAGE_SIZE
 
 
-# Inference function
 def segment_image(image):
     # Preprocess the input image
     image_tensor = torch.from_numpy(image).float()

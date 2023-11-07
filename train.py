@@ -36,6 +36,7 @@ def runner(model, train_dataloader, test_dataloader, optimizer, criterion, devic
             running_loss += loss.item()
 
             del inputs, masks, outputs
+            torch.cuda.empty_cache()
             
         mean_iou = evaluate_mean_iou(model, test_dataloader, device)
         print(f"Epoch {epoch+1}/{epochs}, Loss: {running_loss/len(train_dataloader)}), mIOU: {mean_iou}")

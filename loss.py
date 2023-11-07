@@ -10,7 +10,6 @@ class CombinedLoss(nn.Module):
 
     def forward(self, inputs, targets):
         ce_loss = self.cross_entropy_loss(inputs, targets)
-        # The focal loss can be computed using the cross entropy loss values
         pt = torch.exp(-ce_loss)
         focal_loss = self.alpha * (1-pt)**self.gamma * ce_loss
         return ce_loss + focal_loss

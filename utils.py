@@ -20,6 +20,7 @@ def evaluate_mean_iou(model, dataloader, device):
             total_samples += inputs.size(0)
 
             del inputs, masks, outputs, predicted_masks
+            torch.cuda.empty_cache()
 
     mean_iou = total_iou / total_samples
 
