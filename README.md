@@ -68,7 +68,9 @@ The prediction will be saved in the same directory.
 ## Results
 After training, you can find the trained model weights in the checkpoints directory. **_(COMING SOON..)_**
 
-(IMAGE INFERENCE PATH)
+![Sample Image](/sample.jpg "Sample Image Title")
+
+Using the entire dataset of ~34,000 images, `mIOU = 0.97`
 
 ## To-Do
 
