@@ -14,9 +14,8 @@ from utils import evaluate_mean_iou
 
 
 def runner(model, train_dataloader, test_dataloader, optimizer, criterion, device, epochs):
-    # model = model.to(device)
-    # model.train()
-    # need to put model in training mode
+    model = model.to(device)
+    model.train()
 
     for epoch in range(epochs):
         running_loss = 0.0
